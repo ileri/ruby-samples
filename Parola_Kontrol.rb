@@ -5,7 +5,7 @@ def sorgu (kadi,pass)
 	if kadi == ka && pass == password
 		puts "Giriş Başarılı"
 	elsif kadi == ka && pass != password
-		puts "Kullanıcı Adı ile şifre uyuşmuyor"
+		puts "Kullanıcı Adı ile parola uyuşmuyor"
 	else
 		puts "Böyle bir kullanıcı yok"
 	end
