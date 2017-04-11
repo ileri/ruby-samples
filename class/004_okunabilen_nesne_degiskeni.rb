@@ -2,7 +2,7 @@
 
 # Sınıfın kısa açıklaması
 class Sinif
-  def initialize deger
+  def initialize(deger)
     @deger = deger
   end
 
