@@ -10,24 +10,39 @@ class Sinif
   # ile kodun yorumlanma aşamasında bu metodların oluşturulmasını
   # sağlayabiliriz. Bunun için kullandığımız meta programlama diyimleri
   # şunlardır:
+
   # attr_reader
   # attr_writer
   # attr_accessor
+
   # Gördüğünüz gibi 3 tane özellik erişim çeşidimiz var.
+
   # attr_reader nesne değişkeninin sadece değerini okumaya izin verir
+
   # attr_writer nesne değişkenine sadece değer atamaya izin verir. 
   #   Okuma izni vermez
+
   # attr_accessor nene değişkenine hem okuma hem değer atama izni verir
+
   # Çok sayıda değişkene tek satırda bu özellikleri kazandırabiliriz
   # Kullanım şekli şöyledir:
+
   # attr_reader :nesne1 :nesne2 :diger_nesne
+
   # Gördüğünüz gibi nesne değişkeninin başına @ koymadık, sembol
   # olarak yazdık.
+
+  # Ayrıca bu meta programlamayı kullanmamızın bir iyi yanı da meta
+  # programlama ile tanımladığınız değişken erişimleri , elle metod
+  # yazarak tanımladığınız değişken erişim yönteminden çok daha
+  # performanslı bir şekilde çalışmaktadır.
 
   def initialize(deger1, deger2, deger3)
     # Birden çok değişken ataması yaparken Ruby'nin sağladığı bir
     # kolaylık olan paralel atama, yani şu şekildeki atama da mümkündür
+
     # @deger1, @deger2, @deger3 = deger1, deger2, deger3
+
     # Ancak elle tutulur nedenlerden dolayı Ruby topluluğu mümkün
     # olduğunca paralel atama yapılmaması taraftarıdır. Bunun yerine
     # aşağıdaki gibi seri atama tercih edilmelidir.
