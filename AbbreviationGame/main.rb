@@ -64,6 +64,7 @@ def user_interface(file, abbrs)
           "What do you want to do?\n\n" \
           "1 - Play the Game!\n" \
           "2 - Add new abbreviations\n" \
+          "3 - Update the abbreviation database\n" \
           "\nPlease enter number of your choose: "
     mode = gets.chomp.to_i
     abbrs.update
@@ -73,6 +74,13 @@ def user_interface(file, abbrs)
     when 2
       add_mode file, abbrs
       file.puts JSON.pretty_generate abbrs.list
+    when 3
+      puts "Updating the abbreviation database...\n" \
+           "Downloading latest database from GitHub Servers..."
+      update
+      file = File.open('abbreviations.json', 'r+')
+      abbrs = Abbreviation.new JSON.parse File.read(file)
+      puts "Update completed."
     else
       return
     end
