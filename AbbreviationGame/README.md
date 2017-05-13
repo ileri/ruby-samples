@@ -27,7 +27,7 @@ ruby main.rb
 
 You make it easier for future runings
 
-(Only for UNIX-Like Systems)
+**Only for UNIX-Like Systems**
 
 ```sh
 # Run these commands while you are in file's downloaded (and will be storaged) directory
@@ -35,9 +35,9 @@ chmod +x main.rb
 echo "alias abbreviation=\"$PWD/main.rb\"" >> ~/.bashrc #Change if you are not using BASH
 ```
 
-Restart the terminal session
+*Restart the terminal session*
 
-Now, you can run only typing
+Now, you can run by only typing
 
 ```sh
 abbreviation
