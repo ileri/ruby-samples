@@ -90,6 +90,9 @@ end
 def main
   # BUGFIX : Error when run different directory
   # TODO : Use full path instead of relative path
+  unless File.exist? 'abbreviations.json'
+    update
+  end
   file = File.open('abbreviations.json', 'r+')
   abbrs = Abbreviation.new JSON.parse File.read(file)
   user_interface file, abbrs
