@@ -33,16 +33,6 @@ class Abbreviation
   end
 end
 
-def play(abbrs)
-  loop do
-    
-    
-    answer = gets.chomp.strip.downcase
-    break if answer == 'exit'
-    answer == abbr[key].downcase ? (p 'True') : (p "False, Right: #{abbr[key]}")
-  end
-end
-
 def add_mode(_file, abbrs)
   loop do
     print 'Enter the abbreviation: '
