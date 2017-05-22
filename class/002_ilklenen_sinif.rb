@@ -2,8 +2,8 @@
 
 # Sınıfların ilkleme metodu initialize metodudur.
 class Sinif
-  # Sınıf oluşturulurken new isimli sınıf değişkeni initialize isimli
-  # nesne değişkenini çağırır 
+  # Sınıf oluşturulurken new isimli sınıf metodu initialize isimli
+  # nesne metodunu çağırır 
   def initialize
   end
 end
