@@ -24,7 +24,7 @@ class Arayuz
 
   def addButton_clicked_cb
     puts 'Add button clicked!'
-    alert 'New features are coming soon!'
+    Ekle.new.show_glade()
   end
 
   def updateButton_clicked_cb
